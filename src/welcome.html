@@ -1,3 +1,7 @@
 <h1>${message}</h1>
+<h2>Why isn't this text yellow? h2 should be styled yellow in the welcome component.</h2>
+<p>If I put h2 { color: yellow; } in shared.scss it will style this component - that makes sense. But I want to have that style only for this component.</p>
+<p>Webpack gives this error: <i>WARN: ShadowDOM is disabled for C:\...\aurelia2-shadow-dom-shared-styles\src\welcome.html. ShadowDOM requires element name to contain at least one dash (-), you have to refactor &lt;welcome&gt; to something like &lt;lorem-welcome&gt;</i>.</p>
+<p>If I refactor &lt;welcome&gt; to something like &lt;lorem-welcome&gt; then I get this error: <i>DOMException: Failed to set the 'adoptedStyleSheets' property on 'ShadowRoot': Sharing constructed stylesheets in multiple documents is not allowed</i>.</p>
 
 <span class="shared-text-style">shared-text-style (welcome)</span>

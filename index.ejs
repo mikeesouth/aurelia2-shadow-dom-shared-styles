@@ -5,10 +5,19 @@
   <meta charset="utf-8">
   <title>Aurelia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>body { background-color: lightgrey; }</style>
 </head>
 
 <body>
+  <script type="module">
+    import './index.css';
+  </script>
   <span class="shared-text-style">shared-text-style (index.ejs)</span>
+  <p>Shared styles are not applied to index.ejs. Inline styles in index.ejs are applied (the background is light grey).</p>
+  <p>How can I have a shared style file for index.ejs? I.e. how can I style html or body without using inline styles in index.ejs?</p>
+
+  <br><br><br>
+
   <my-app></my-app>
 </body>
 
